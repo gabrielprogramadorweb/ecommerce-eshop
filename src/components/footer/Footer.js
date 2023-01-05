@@ -3,9 +3,10 @@ import styles from './Footer.module.scss';
 
 //função para buscar data atual//
 const date = new Date();
+const year = date.getFullYear();
 
 const Footer = () => {
-  return <div className={styles.footer}>&copy;</div>;
+  return <div className={styles.footer}>&copy;{year} All Rights Reserved</div>;
 };
 
 export default Footer;
